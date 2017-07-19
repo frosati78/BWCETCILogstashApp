@@ -1,0 +1,29 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [],
+        "url": "https://eu.integration.cloud.tibco.com:443"
+    }],
+    "resources": [
+        {
+            "location": "Service Descriptors/logstashlogger.module.Process-SendMessage.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/logstashlogger.module.LogMessageProcess-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/logstashlogger.module.LogMessageProcess-sendLogMessage.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/logstashlogger.module.LogstashMessageProcess-sendLogMessage.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/logstashlogger.module.SendMessageToLogstash-sendLogMessage.json",
+            "type": "generated"
+        }
+    ]
+}

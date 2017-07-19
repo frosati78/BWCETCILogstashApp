@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/BWAttributeSchema" xmlns:tns="http://www.example.org/BWAttributeSchema" elementFormDefault="qualified">
+
+   
+    <element name="BWAttributesElement" type="tns:BwAttributesElementType"></element>
+    <complexType name="ApplicationType">
+    	<sequence>
+    		<element name="Name" type="string"></element>
+    		<element name="Version" type="string"></element>
+    	</sequence>
+    </complexType>
+     <complexType name="ModuleType">
+    	<sequence>
+    		<element name="Name" type="string"></element>
+    		<element name="Version" type="string"></element>
+    	</sequence>
+    </complexType>
+    <complexType name="BwAttributesElementType">
+    	<sequence>
+    		 <element name="Application" type="tns:ApplicationType" minOccurs="1" maxOccurs="1"></element>
+
+   
+    <element name="AppNode" type="string" minOccurs="0" maxOccurs="1"></element>
+
+    <element name="AppSpace" type="string" minOccurs="0" maxOccurs="1"></element>
+
+    <element name="DomainName" type="string" minOccurs="0" maxOccurs="1"></element>
+
+    <element name="Module" type="tns:ModuleType" minOccurs="1" maxOccurs="1"></element>
+
+    <element name="ProcessaName" type="string" minOccurs="1" maxOccurs="1"></element>
+
+    <element name="EngineName" type="string" minOccurs="1" maxOccurs="1"></element>
+
+    <element name="ActivityName" type="string" minOccurs="0" maxOccurs="1"></element>
+
+    	</sequence>
+    </complexType>
+</schema>

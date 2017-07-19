@@ -1,0 +1,179 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Summary about the new REST service.",
+    "description" : "Summary about the new REST service."
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/sendlogmessage" : {
+      "post" : {
+        "description" : "",
+        "operationId" : "post-sendlogmessage",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/LoggerSchemaElement"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a ExceptionSchemaElement to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/ExceptionSchemaElement"
+            }
+          }
+        }
+      },
+      "get" : {
+        "description" : "",
+        "operationId" : "get-sendlogmessage",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ExceptionSchemaElement" : {
+      "type" : "object",
+      "properties" : {
+        "errorType" : {
+          "type" : "string"
+        },
+        "errorCode" : {
+          "type" : "string"
+        },
+        "errorMessage" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ExecutionTime" : {
+      "type" : "object",
+      "properties" : {
+        "startTime" : {
+          "type" : "string"
+        },
+        "endTime" : {
+          "type" : "string"
+        }
+      }
+    },
+    "BWAttributesElement" : {
+      "type" : "object",
+      "required" : [ "ProcessaName", "Module", "Application", "EngineName" ],
+      "properties" : {
+        "Application" : {
+          "$ref" : "#/definitions/Application"
+        },
+        "AppNode" : {
+          "type" : "string"
+        },
+        "AppSpace" : {
+          "type" : "string"
+        },
+        "DomainName" : {
+          "type" : "string"
+        },
+        "Module" : {
+          "$ref" : "#/definitions/Module"
+        },
+        "ProcessaName" : {
+          "type" : "string"
+        },
+        "EngineName" : {
+          "type" : "string"
+        },
+        "ActivityName" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Module" : {
+      "type" : "object",
+      "required" : [ "Version", "Name" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string"
+        },
+        "Version" : {
+          "type" : "string"
+        }
+      }
+    },
+    "contextMapAttribute" : {
+      "type" : "object",
+      "properties" : {
+        "key" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Application" : {
+      "type" : "object",
+      "required" : [ "Version", "Name" ],
+      "properties" : {
+        "Name" : {
+          "type" : "string"
+        },
+        "Version" : {
+          "type" : "string"
+        }
+      }
+    },
+    "LoggerSchemaElement" : {
+      "type" : "object",
+      "required" : [ "logLevel", "loggerName", "logDateTime" ],
+      "properties" : {
+        "logLevel" : {
+          "type" : "string"
+        },
+        "loggerName" : {
+          "type" : "string"
+        },
+        "messageCode" : {
+          "type" : "string"
+        },
+        "message" : {
+          "type" : "string"
+        },
+        "trackingID" : {
+          "type" : "string"
+        },
+        "logDateTime" : {
+          "type" : "string"
+        },
+        "contextMapAttribute" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/contextMapAttribute",
+            "uniqueItems" : false
+          }
+        },
+        "ExecutionTime" : {
+          "$ref" : "#/definitions/ExecutionTime"
+        },
+        "BWAttributesElement" : {
+          "$ref" : "#/definitions/BWAttributesElement"
+        }
+      }
+    }
+  }
+}

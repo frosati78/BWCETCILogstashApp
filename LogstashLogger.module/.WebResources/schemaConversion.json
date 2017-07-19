@@ -1,0 +1,32 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/LogstashLogger.module/Service Descriptors/logstashlogger.module.Process-SendMessage.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1499788800151"
+    },
+    {
+        "jsonSchemaLocation": "/LogstashLogger.module/Service Descriptors/logstashlogger.module.LogMessageProcess-Resource.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1499854533834"
+    },
+    {
+        "jsonSchemaLocation": "/LogstashLogger.module/Service Descriptors/logstashlogger.module.LogstashMessageProcess-sendLogMessage.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1499854533834"
+    },
+    {
+        "jsonSchemaLocation": "/LogstashLogger.module/Service Descriptors/logstashlogger.module.LogstashMessageProcess-sendLogMessage.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1499857649551"
+    },
+    {
+        "jsonSchemaLocation": "/LogstashLogger.module/Service Descriptors/logstashlogger.module.SendMessageToLogstash-sendLogMessage.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1499854533834"
+    },
+    {
+        "jsonSchemaLocation": "/LogstashLogger.module/Service Descriptors/logstashlogger.module.SendMessageToLogstash-sendLogMessage.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://tns.tibco.com/bw/json/1499857649551"
+    }
+]}

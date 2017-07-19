@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_k7uVUIzxEeaMSZ9_B_SvoQ" targetNamespace="http://tns.tibco.com/bw/composite/TCI-ACMEShared" name="TCI-ACMEShared" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:property xmi:id="_k98i4IzxEeaMSZ9_B_SvoQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_k99xAIzxEeaMSZ9_B_SvoQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_k9-_IIzxEeaMSZ9_B_SvoQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_k-A0UIzxEeaMSZ9_B_SvoQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_k-DQkIzxEeaMSZ9_B_SvoQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_k-D3oIzxEeaMSZ9_B_SvoQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Mpf1oIzzEeaMSZ9_B_SvoQ" name="HttpConn9393" type="XMLSchema:int" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_NVcM0GumEeeJFtfQmfAn0w" name="/logRestService/hostname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+</sca:composite>

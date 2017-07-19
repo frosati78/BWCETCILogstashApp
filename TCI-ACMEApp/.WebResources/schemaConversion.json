@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/TCI-ACMEApp/Service Descriptors/tci-acmeapp.ACMEOrdering-CustOrder.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.tibco.com/schemas/testschemas/Schema.xsd"
+}]}
