@@ -14,7 +14,9 @@
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
-    xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    xmlns:tibprop="http://ns.tibco.com/bw/property"
+    xmlns:tns="http://tns.tibco.com/bw/RESTSharedModule"
+    xmlns:tns0="http://tns.tibco.com/bw/REST" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"

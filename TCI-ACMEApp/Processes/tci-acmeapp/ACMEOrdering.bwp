@@ -10,7 +10,9 @@
     xmlns:sca="http://docs.oasis-open.org/ns/opencsa/sca/200912"
     xmlns:sca-bpel="http://docs.oasis-open.org/ns/opencsa/sca-bpel/200801"
     xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
-    xmlns:tibprop="http://ns.tibco.com/bw/property" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    xmlns:tibprop="http://ns.tibco.com/bw/property"
+    xmlns:tns="http://tns.tibco.com/bw/REST"
+    xmlns:tns0="http://tns.tibco.com/bw/RESTAcmeApp" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <tibex:Types>
         <xs:schema attributeFormDefault="unqualified"
             elementFormDefault="qualified"
@@ -889,9 +891,9 @@
         </edges>
     </notation:Diagram>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://www.tibco.com/schemas/testschemas/Schema.xsd"/>
-    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
     <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" namespace="http://www.tibco.com/tibedu/ACMEOrders"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://xmlns.example.com/CustOrder/parameters"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use" name="custorder"
             partnerLinkType="ns0:partnerLinkType"

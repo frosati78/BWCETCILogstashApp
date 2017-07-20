@@ -3,7 +3,8 @@ Bundle-ManifestVersion: 2
 Bundle-Name: LogstashLogger Module
 Bundle-SymbolicName: LogstashLogger.module
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: lib/logstashproxy1.0.0.jar,.
+Bundle-ClassPath: lib/logstashproxy1.0.0.jar,
+ .
 Bundle-Vendor: TIBCO Software Inc.
 TIBCO-BW-Edition: bwcloud
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
