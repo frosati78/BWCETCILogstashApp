@@ -3,6 +3,7 @@
 	<globalVariables>
 		<globalVariable>
 			<name>/logstash/host</name>
+			<value>localhost</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -10,6 +11,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/logstash/port</name>
+			<value>9001</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -17,6 +19,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>/logstash/timeout</name>
+			<value>5000</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
@@ -72,11 +75,11 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//LogstashLogger.module///logstash/host</name>
-			<value>ec2-54-76-221-225.eu-west-1.compute.amazonaws.com</value>
+			<value>localhost</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//LogstashLogger.module///logstash/port</name>
@@ -89,6 +92,22 @@
 		<globalVariable>
 			<name>//LogstashLogger.module///logstash/timeout</name>
 			<value>5000</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Integer</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//LogstashLogger.module///restService/host</name>
+			<value>localhost</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//LogstashLogger.module///restService/port</name>
+			<value>80</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>

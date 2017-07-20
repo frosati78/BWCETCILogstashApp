@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://tns.tibco.com/bw/json/1499854533834" xmlns:tns="http://www.example.org/wsdl/1500554796035" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SendMessageToLogstash" targetNamespace="http://www.example.org/wsdl/1500554796035">
+  <wsdl:import namespace="http://tns.tibco.com/bw/json/1499854533834"/>
+  <wsdl:types>
+    <xsd:schema elementFormDefault="unqualified" targetNamespace="http://www.example.org/wsdl/1500554796035">
+      <xsd:element name="sendLogMessageRequest">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="in" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="sendLogMessageResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="out" type="xsd:string"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="sendLogMessageRequest">
+    <wsdl:part element="tns:sendLogMessageRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="sendLogMessageResponse">
+    <wsdl:part element="tns:sendLogMessageResponse" name="parameters"/>
+  </wsdl:message>
+  <wsdl:portType name="SendMessageToLogstash">
+    <wsdl:operation name="sendLogMessage">
+      <wsdl:input message="tns:sendLogMessageRequest" name="sendLogMessageInput"/>
+      <wsdl:output message="tns:sendLogMessageResponse" name="sendLogMessageOutput"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>
