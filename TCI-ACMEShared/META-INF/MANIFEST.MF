@@ -19,6 +19,7 @@ Provide-Capability: com.tibco.bw.module; name="TCI-ACMEShared"; version:Version=
  com.tibco.bw.schemas; ns="http://www.tibco.com/schemas/testschemas/Schema.xsd",
  com.tibco.bw.schemas; ns="http://www.tibco.com/tibedu/testschema/CustSchema.xsd",
  com.tibco.bw.schemas; ns="http://www.example.org/BWAttributeSchema",
+ com.tibco.bw.schemas; ns="http://tns.tibco.com/bw/REST",
  com.tibco.bw.wsdls; ns="http://www.tibco.com/tibedu/ACMEItems",
  com.tibco.bw.wsdls; ns="http://www.tibco.com/tibedu/ACMEOrders",
  com.tibco.bw.processes; name="tci-acmeshared",

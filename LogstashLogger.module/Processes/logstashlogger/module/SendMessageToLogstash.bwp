@@ -237,7 +237,10 @@
             xmlns:extns="http://tns.tibco.com/bw/json/1499857649551"
             xmlns:extns1="http://tns.tibco.com/bw/json/1499854533834"
             xmlns:extns2="http://tns.tibco.com/bw/REST"
+            xmlns:extns3="http://xmlns.example.com/sendLogMessage/parameters"
+            xmlns:extns4="http://xmlns.example.com/Default/parameters"
             xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype"
+            xmlns:ptyp="http://www.example.org/wsdl/1500554796035"
             xmlns:tibex="http://www.tibco.com/bpel/2007/extensions"
             xmlns:tns="http://xmlns.example.com/20170719175818PLT"
             xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop"
@@ -248,6 +251,9 @@
             <wsdl:import namespace="http://tns.tibco.com/bw/json/1499857649551"/>
             <wsdl:import namespace="http://tns.tibco.com/bw/json/1499854533834"/>
             <wsdl:import namespace="http://tns.tibco.com/bw/REST"/>
+            <wsdl:import namespace="http://xmlns.example.com/sendLogMessage/parameters"/>
+            <wsdl:import namespace="http://xmlns.example.com/Default/parameters"/>
+            <wsdl:import namespace="http://www.example.org/wsdl/1500554796035"/>
             <wsdl:message name="postRequest">
                 <wsdl:part element="extns1:LoggerSchemaElement"
                     name="item" tibex:hasMultipleNamespaces="true"/>
@@ -264,6 +270,24 @@
             <wsdl:message name="post5XXFaultMessage">
                 <wsdl:part element="extns2:server5XXError" name="serverError"/>
             </wsdl:message>
+            <wsdl:message name="postRequest1">
+                <wsdl:part element="extns1:LoggerSchemaElement"
+                    name="item" tibex:hasMultipleNamespaces="true"/>
+                <wsdl:part element="extns2:httpHeaders"
+                    name="httpHeaders" tibex:source="bw.rest"/>
+                <wsdl:part element="extns4:RestReferencePostParameters"
+                    name="parameters" tibex:source="bw.rest"/>
+            </wsdl:message>
+            <wsdl:message name="postResponse1">
+                <wsdl:part element="extns:ExceptionSchemaElement"
+                    name="item" tibex:hasMultipleNamespaces="false"/>
+            </wsdl:message>
+            <wsdl:message name="post4XXFaultMessage1">
+                <wsdl:part element="extns2:client4XXError" name="clientError"/>
+            </wsdl:message>
+            <wsdl:message name="post5XXFaultMessage1">
+                <wsdl:part element="extns2:server5XXError" name="serverError"/>
+            </wsdl:message>
             <wsdl:portType name="sendlogmessage"
                 tibex:bw.rest.apipath="/sendlogmessage"
                 tibex:bw.rest.basepath="sendLogMessage"
@@ -275,6 +299,18 @@
                     <wsdl:output message="tns:postResponse" name="postOutput"/>
                     <wsdl:fault message="tns:post4XXFaultMessage" name="clientFault"/>
                     <wsdl:fault message="tns:post5XXFaultMessage" name="serverFault"/>
+                </wsdl:operation>
+            </wsdl:portType>
+            <wsdl:portType name="RestReference"
+                tibex:bw.rest.apipath="/resource/sendlogmessage"
+                tibex:bw.rest.basepath="/" tibex:bw.rest.host=""
+                tibex:bw.rest.resource.source="generated" tibex:source="bw.rest.reference">
+                <wsdl:documentation>summary documentation</wsdl:documentation>
+                <wsdl:operation name="post">
+                    <wsdl:input message="tns:postRequest1" name="postInput"/>
+                    <wsdl:output message="tns:postResponse1" name="postOutput"/>
+                    <wsdl:fault message="tns:post4XXFaultMessage1" name="clientFault"/>
+                    <wsdl:fault message="tns:post5XXFaultMessage1" name="serverFault"/>
                 </wsdl:operation>
             </wsdl:portType>
         </wsdl:definitions>
@@ -1062,6 +1098,8 @@
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1499857649551"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/json/1499854533834"/>
     <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://tns.tibco.com/bw/REST"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://xmlns.example.com/sendLogMessage/parameters"/>
+    <bpws:import importType="http://www.w3.org/2001/XMLSchema" namespace="http://xmlns.example.com/Default/parameters"/>
     <bpws:partnerLinks>
         <bpws:partnerLink myRole="use" name="sendlogmessage"
             partnerLinkType="ns0:partnerLinkType"

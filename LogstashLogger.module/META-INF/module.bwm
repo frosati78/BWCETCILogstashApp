@@ -7,7 +7,6 @@
         <clientFormat>json</clientFormat>
         <clientRequestFormat>json</clientRequestFormat>
       </operation>
-      <parameters xmi:id="_TbQeOmybEeeMWNL3fSprBw"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_TbQeOWybEeeMWNL3fSprBw" bindingName="RestService"/>
   </sca:service>
@@ -20,6 +19,8 @@
   <sca:property xmi:id="_0D5hcGZSEeePlcHdtbt0zA" name="/logstash/host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_3QwfAGZSEeePlcHdtbt0zA" name="/logstash/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_bit-gGb-Eeexd67eebp5Lg" name="/logstash/timeout" type="XMLSchema:int" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_A8ylQG0_EeeouJFpEWWaVQ" name="/restService/host" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_GUcmcG0_EeeouJFpEWWaVQ" name="/restService/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_FMMXcGybEeeMWNL3fSprBw" name="ComponentSendMessageToLogstash" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_FMMXcWybEeeMWNL3fSprBw" processName="logstashlogger.module.SendMessageToLogstash"/>
     <sca:service xmi:id="_TbQeMGybEeeMWNL3fSprBw" name="sendlogmessage">

@@ -5,7 +5,7 @@
     "title" : "ACME Customer Orders",
     "description" : "ACME Customer Orders"
   },
-  "host" : "",
+  "host" : "localhost:8080",
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {

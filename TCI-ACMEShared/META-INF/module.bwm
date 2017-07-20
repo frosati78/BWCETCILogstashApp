@@ -8,4 +8,6 @@
   <sca:property xmi:id="_k-D3oIzxEeaMSZ9_B_SvoQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_Mpf1oIzzEeaMSZ9_B_SvoQ" name="HttpConn9393" type="XMLSchema:int" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_NVcM0GumEeeJFtfQmfAn0w" name="/logRestService/hostname" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_9Yq1sG0nEee4y93YXnK7ZA" name="/logRestService/resourcePath" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_gHRtUG0pEee4y93YXnK7ZA" name="/logRestService/port" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
 </sca:composite>
